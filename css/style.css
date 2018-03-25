@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face{
+	font-family:"source-semi";
+	src: url("../font/SourceSansPro-Semibold.ttf");}
+
+html {
+  height: 100%;
+  overflow: hidden;}
+
+body { 
+  margin:0;
+  padding:0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;}
+
+			header{
+				width: 100%;
+				height: 100px;
+				top: 0;
+				left: 0;
+				position: fixed;
+				z-index: 20;}
+			nav{
+				width: 95%;
+				height: 80px;
+				padding: 10px;
+				margin:auto;}
+			.nav1{
+				width:50%;
+				height:80px;
+				margin:0;
+				padding:0;						
+				float: left;}
+			.logo{
+				width:80px;
+				height:80px;
+				background-image:url(../img/axa-logo.png);
+				background-size: contain;
+				float: left;}
+			h2{
+				font-family:'source-semi';
+				color:#FFFFFF;
+				letter-spacing: 5px;
+				margin:25px 0 0 0;
+				position: relative;
+				left:20px;
+				font-size: 20px;}
+			.nav2{
+				width:50%;
+				height:80px;
+				margin:0;
+				padding:0;
+				float:left;}
+			.nav2 a{
+				font-display: none;
+				text-decoration: none;
+				text-decoration-style: none;
+				color:#FFFFFF;
+				font-family:'source-semi';
+				letter-spacing: 5px;
+				font-size: 20px;
+				text-align: right;
+				float: right;
+				margin:24px 0 0 0;}
+
+
+.slide {
+  position: relative;
+  padding: 35vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing:border-box;
+  transform-style: inherit;}
+
+.slide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;}
+
+
+.slide, .slide:before {
+  background: 50% 50% / cover;}
+
+.header {
+  text-align: center;
+	font-family:'source-semi';
+  font-size: 35px;
+  color: #FFFFFF;}
+
+#title {
+  background-image: url("../img/rocks.jpeg");
+  height:100vh;
+  z-index:2;}
+
+#title h1 {
+ transform: translateZ(.35px) scale(.75);
+ transform-origin: 80% 100%;
+text-shadow: -1px -1px 1px #000000;}
+
+#title h2 {
+	transform: translateZ(.35px) scale(.75);
+    transform-origin: 60% 50%;
+	text-align: center;
+	font-family:'source-semi';
+    font-size: 45px;
+    color: #FFFFFF;
+    text-shadow: -1px -1px 1px #000000;}
+#title h3 {
+    transform: translateZ(.35px) scale(.75);
+	transform-origin: 60% 50%;
+    text-align: center;
+	font-family:'source-semi';
+    font-size: 40px;
+    color:#FFFFFF;
+	text-shadow: -1px -1px 1px #000000;}
+#slide1:before {
+    background-image: url("../img/Index-hero.png");
+	height:100vh;
+	width:100%;
+    transform: translateZ(-1.5px) scale(2);}
+
+
+
+
